@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="抄表员:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bk">
+
+        <!--<Spinner-->
+            <!--android:id="@+id/et_cnumber"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:spinnerMode="dropdown"-->
+            <!--android:entries="@array/userName"-->
+            <!--/>-->
+        <TextView
+            android:id="@+id/et_cnumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center|left"
+            android:textColor="#3C3F41"
+            android:entries="@array/userNames"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点我选择用水年月:" />
+
+    <TextView
+        android:id="@+id/et_yerdate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bk"
+        android:gravity="center|left"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/bt_sean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="下载"
+        android:textColor="@color/btn_text_color"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lv_mrd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

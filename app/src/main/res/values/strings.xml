@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">宜昌水务</string>
+    <string name="update">上传</string>
+    <string name="download">下载</string>
+    <string name="scan">抄表</string>
+    <string name="tj">统计</string>
+    <string name="title">鸦鹊水务</string>
+    <array name="updatelist">
+        <item>上传电话</item>
+        <item>上传性质</item>
+        <item>上报缴费</item>
+    </array>
+
+</resources>

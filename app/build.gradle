@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        applicationId "com.yq.yqwater"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/volley.jar')
+    compile files('libs/json-lib-2.4-jdk15.jar')
+    compile files('libs/DeviceAPIver20160627.jar')
+    compile(name: 'smtlibrary', ext: 'aar')
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
+    compile 'com.google.android.gms:play-services-appindexing:9.4.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.jzxiang.pickerview:TimePickerDialog:0.9.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:7.0.1'//view注解
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.jzxiang.pickerview:TimePickerDialog:0.9.2'
+}

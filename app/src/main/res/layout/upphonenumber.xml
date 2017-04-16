@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户编号:" />
+
+    <EditText
+        android:id="@+id/et_userid"
+        android:background="@drawable/bk"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电话号码:" />
+
+    <EditText
+        android:id="@+id/et_userphone"
+        android:layout_width="match_parent"
+        android:background="@drawable/bk"
+        android:inputType="number"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/bt_upphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="上传数据"
+        android:textColor="@color/btn_text_color"
+        android:textSize="16sp" />
+
+</LinearLayout>

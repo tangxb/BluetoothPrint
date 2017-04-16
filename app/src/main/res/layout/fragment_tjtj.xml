@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yq.fragment.TongJiFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="点我选择年月:"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|left"
+            android:inputType="number"
+            android:maxLength="6"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bk"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_tj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_bg"
+            android:text="统计查询/上传未上传数据"
+            android:textColor="@color/btn_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/result_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

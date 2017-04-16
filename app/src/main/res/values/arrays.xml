@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_tabs">
+        <item>上传电话</item>
+        <item>上传标签号</item>
+        <item>上传缴费</item>
+    </string-array>
+
+    <string-array name="home_tabs1">
+        <item>用户数据</item>
+        <item>用户欠费信息</item>
+    </string-array>
+    <!--增加   start-->
+    <string-array name="home_tabs2">
+        <item>查询</item>
+        <item>统计</item>
+    </string-array>
+    <!--增加    ending-->
+
+
+    <string-array name="userNames">
+        <item>喻顺保</item>
+        <item>田枚云</item>
+        <item>文毅</item>
+        <item>姚家奇</item>
+    </string-array>
+
+    <string-array name="userId">
+        <item>110101</item>
+        <item>110104</item>
+        <item>110105</item>
+        <item>110106</item>
+    </string-array>
+
+</resources>
